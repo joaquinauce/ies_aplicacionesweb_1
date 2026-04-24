@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Nova | Registro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html" aria-label="Ir al inicio de Tienda Nova">
+        <span class="brand-icon">TN</span>
+        <span>Tienda Nova</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="categorias/electronica.html">Electrónica</a>
+        <a href="categorias/indumentaria.html">Indumentaria</a>
+        <a href="categorias/hogar.html">Hogar</a>
+        <a href="login.html">Login</a>
+        <a href="registro.html">Registro</a>
+      </div>
+
+      <a class="button button-secondary" href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <section class="form-section">
+      <p class="eyebrow">Alta de cuenta</p>
+      <h1>Registro</h1>
+      <form class="form-card">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Ingresá tu nombre" required>
+
+        <label for="apellido">Apellido</label>
+        <input id="apellido" name="apellido" type="text" placeholder="Ingresá tu apellido" required>
+
+        <label for="registro-email">Email</label>
+        <input id="registro-email" name="email" type="email" placeholder="nombre@correo.com" required>
+
+        <label for="registro-password">Contraseña</label>
+        <input id="registro-password" name="password" type="password" placeholder="Creá una contraseña" required>
+
+        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+        <input id="fecha-nacimiento" name="fecha_nacimiento" type="date" required>
+
+        <button class="button" type="submit">Registrarme</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

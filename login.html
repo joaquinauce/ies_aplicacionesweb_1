@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Nova | Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html" aria-label="Ir al inicio de Tienda Nova">
+        <span class="brand-icon">TN</span>
+        <span>Tienda Nova</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="categorias/electronica.html">Electrónica</a>
+        <a href="categorias/indumentaria.html">Indumentaria</a>
+        <a href="categorias/hogar.html">Hogar</a>
+        <a href="login.html">Login</a>
+        <a href="registro.html">Registro</a>
+      </div>
+
+      <a class="button button-secondary" href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <section class="form-section">
+      <p class="eyebrow">Acceso de usuarios</p>
+      <h1>Iniciar sesión</h1>
+      <form class="form-card">
+        <label for="login-email">Email</label>
+        <input id="login-email" name="email" type="email" placeholder="nombre@correo.com" required>
+
+        <label for="login-password">Contraseña</label>
+        <input id="login-password" name="password" type="password" placeholder="Ingresá tu contraseña" required>
+
+        <button class="button" type="submit">Ingresar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
