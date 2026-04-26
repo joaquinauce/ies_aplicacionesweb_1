@@ -1,6 +1,6 @@
 # Tienda Nova
 
-**Nombre y apellido:** Completar con tus datos
+**Nombre y apellido:** Joaquin Auce
 
 ## Descripción del proyecto
 
@@ -18,4 +18,4 @@ tres páginas de categorías de productos: Electrónica, Indumentaria y Hogar.
 
 ## Objetivo
 
-Generar la estructura base de un ecommerce cumpliendo con los requisitos solicitados para la entrega.
+Generar la estructura base de un ecommerce cumpliendo con los requisitos solicitados para cada entrega.
