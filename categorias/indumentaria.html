@@ -6,7 +6,7 @@
   <title>Tienda Nova | Indumentaria</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="page-indumentaria">
   <header class="site-header">
     <nav class="navbar">
       <a class="brand" href="../index.html" aria-label="Ir al inicio de Tienda Nova">
@@ -17,40 +17,142 @@
       <div class="nav-links">
         <a href="../index.html">Home</a>
         <a href="electronica.html">Electrónica</a>
-        <a href="indumentaria.html">Indumentaria</a>
+        <a class="nav-link-active" href="indumentaria.html">Indumentaria</a>
         <a href="hogar.html">Hogar</a>
         <a href="../login.html">Login</a>
         <a href="../registro.html">Registro</a>
       </div>
 
-      <a class="button button-secondary" href="../login.html">Logout</a>
+      <a class="button button-secondary" href="../index.html#destacados">Destacados</a>
     </nav>
   </header>
 
   <main class="container">
     <section class="category-hero">
-      <p class="eyebrow">Categoría</p>
-      <h1>Indumentaria</h1>
-      <p>
-        Explorá prendas cómodas y actuales para todos los días: remeras, buzos,
-        pantalones y accesorios de moda.
-      </p>
+      <div class="section-head section-head-compact">
+        <div>
+          <p class="eyebrow">Categoría</p>
+          <h1>Indumentaria</h1>
+          <p>
+            Explorá prendas cómodas y actuales para todos los días: básicos,
+            abrigos livianos y accesorios con una línea visual coherente.
+          </p>
+        </div>
+
+        <div class="catalog-summary">
+          <span class="summary-label">Selección Nova</span>
+          <strong>3 productos prototipo</strong>
+          <p>Mockup de catálogo con cards de producto y espacio para futuras imágenes reales.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="card-grid">
-      <article class="card">
-        <h2>Remeras</h2>
-        <p>Básicas, estampadas y deportivas para distintos estilos.</p>
-      </article>
-      <article class="card">
-        <h2>Buzos</h2>
-        <p>Opciones livianas y abrigadas para media estación e invierno.</p>
-      </article>
-      <article class="card">
-        <h2>Accesorios</h2>
-        <p>Mochilas, gorras y complementos para completar tu look.</p>
-      </article>
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Catálogo</p>
+          <h2>Productos destacados</h2>
+        </div>
+        <p class="section-copy">
+          Las cards ya muestran estructura de precio, categoría, etiqueta visual y acción de compra.
+        </p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-media tone-indigo">
+            <span class="product-media-label">Basics</span>
+            <strong>Vector Tee</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Remeras</span>
+            <h3 class="product-title">Remera Vector Oversize</h3>
+            <p class="product-description">
+              Corte amplio, algodón peinado y una caída pensada para un look urbano actual.
+            </p>
+            <div class="product-meta">
+              <span>100% algodón</span>
+              <span>Talles S al XL</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$29.900</strong>
+                <span>$34.900</span>
+              </div>
+              <a class="button button-small" href="../login.html">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media tone-navy">
+            <span class="product-media-label">Outerwear</span>
+            <strong>North Line</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Buzos</span>
+            <h3 class="product-title">Buzo North Line Premium</h3>
+            <p class="product-description">
+              Abrigo liviano con interior suave y un frente limpio para combinar fácil.
+            </p>
+            <div class="product-meta">
+              <span>Unisex</span>
+              <span>Interior fleece</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$64.900</strong>
+                <span>$74.900</span>
+              </div>
+              <a class="button button-small" href="../login.html">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media tone-teal">
+            <span class="product-media-label">Carry</span>
+            <strong>District Bag</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Accesorios</span>
+            <h3 class="product-title">Mochila District Daily</h3>
+            <p class="product-description">
+              Un accesorio funcional para facultad, oficina y rutinas urbanas de todos los días.
+            </p>
+            <div class="product-meta">
+              <span>15"</span>
+              <span>Impermeable</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$58.000</strong>
+                <span>$66.500</span>
+              </div>
+              <a class="button button-small" href="../login.html">Comprar</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-brand">
+        <strong>Tienda Nova</strong>
+        <p>
+          Categoría de indumentaria presentada como catálogo visual base para el ecommerce.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="electronica.html">Electrónica</a>
+        <a href="indumentaria.html">Indumentaria</a>
+        <a href="hogar.html">Hogar</a>
+        <a href="../registro.html">Registro</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

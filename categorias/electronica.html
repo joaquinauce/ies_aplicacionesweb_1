@@ -6,7 +6,7 @@
   <title>Tienda Nova | Electrónica</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="page-electronica">
   <header class="site-header">
     <nav class="navbar">
       <a class="brand" href="../index.html" aria-label="Ir al inicio de Tienda Nova">
@@ -16,41 +16,144 @@
 
       <div class="nav-links">
         <a href="../index.html">Home</a>
-        <a href="electronica.html">Electrónica</a>
+        <a class="nav-link-active" href="electronica.html">Electrónica</a>
         <a href="indumentaria.html">Indumentaria</a>
         <a href="hogar.html">Hogar</a>
         <a href="../login.html">Login</a>
         <a href="../registro.html">Registro</a>
       </div>
 
-      <a class="button button-secondary" href="../login.html">Logout</a>
+      <a class="button button-secondary" href="../index.html#destacados">Destacados</a>
     </nav>
   </header>
 
   <main class="container">
     <section class="category-hero">
-      <p class="eyebrow">Categoría</p>
-      <h1>Electrónica</h1>
-      <p>
-        Descubrí productos de tecnología para estudio, trabajo y entretenimiento:
-        celulares, notebooks, auriculares, parlantes y más.
-      </p>
+      <div class="section-head section-head-compact">
+        <div>
+          <p class="eyebrow">Categoría</p>
+          <h1>Electrónica</h1>
+          <p>
+            Descubrí productos de tecnología para estudio, trabajo y entretenimiento:
+            audio, notebooks, periféricos y accesorios listos para un catálogo real.
+          </p>
+        </div>
+
+        <div class="catalog-summary">
+          <span class="summary-label">Selección Nova</span>
+          <strong>3 productos prototipo</strong>
+          <p>Cards ya preparadas con bloque visual, precio, beneficios y CTA.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="card-grid">
-      <article class="card">
-        <h2>Auriculares</h2>
-        <p>Modelos inalámbricos y con cable para música, gaming y reuniones.</p>
-      </article>
-      <article class="card">
-        <h2>Notebooks</h2>
-        <p>Equipos versátiles para cursar, trabajar y usar a diario.</p>
-      </article>
-      <article class="card">
-        <h2>Accesorios</h2>
-        <p>Cargadores, teclados, fundas y periféricos para completar tu setup.</p>
-      </article>
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Catálogo</p>
+          <h2>Productos destacados</h2>
+        </div>
+        <p class="section-copy">
+          Esta página ya funciona como ejemplo visual de una categoría completa de ecommerce.
+        </p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-media tone-sky">
+            <span class="product-media-label">Audio</span>
+            <strong>Nova Wave</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Auriculares</span>
+            <h3 class="product-title">Nova Wave Studio</h3>
+            <p class="product-description">
+              Perfil urbano, sonido limpio y batería extendida para home office o estudio.
+            </p>
+            <div class="product-meta">
+              <span>30 h batería</span>
+              <span>Bluetooth</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$129.999</strong>
+                <span>$159.999</span>
+              </div>
+              <a class="button button-small" href="../login.html">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media tone-navy">
+            <span class="product-media-label">Notebook</span>
+            <strong>Orbit 14</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Computación</span>
+            <h3 class="product-title">Notebook Orbit 14</h3>
+            <p class="product-description">
+              Equipo compacto para cursar, trabajar y resolver tareas diarias con solvencia.
+            </p>
+            <div class="product-meta">
+              <span>16 GB RAM</span>
+              <span>SSD 512 GB</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$899.900</strong>
+                <span>$949.900</span>
+              </div>
+              <a class="button button-small" href="../login.html">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media tone-teal">
+            <span class="product-media-label">Desk</span>
+            <strong>Focus Kit</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Accesorios</span>
+            <h3 class="product-title">Kit Focus Desk</h3>
+            <p class="product-description">
+              Mouse, pad y soporte para ordenar un escritorio con una presencia visual uniforme.
+            </p>
+            <div class="product-meta">
+              <span>3 piezas</span>
+              <span>USB-C</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$72.500</strong>
+                <span>$82.500</span>
+              </div>
+              <a class="button button-small" href="../login.html">Comprar</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-brand">
+        <strong>Tienda Nova</strong>
+        <p>
+          Categoría de electrónica con cards prototipo listas para evolucionar a
+          catálogo real.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="electronica.html">Electrónica</a>
+        <a href="indumentaria.html">Indumentaria</a>
+        <a href="hogar.html">Hogar</a>
+        <a href="../login.html">Login</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

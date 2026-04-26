@@ -6,7 +6,7 @@
   <title>Tienda Nova | Login</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-login">
   <header class="site-header">
     <nav class="navbar">
       <a class="brand" href="index.html" aria-label="Ir al inicio de Tienda Nova">
@@ -19,28 +19,82 @@
         <a href="categorias/electronica.html">Electrónica</a>
         <a href="categorias/indumentaria.html">Indumentaria</a>
         <a href="categorias/hogar.html">Hogar</a>
-        <a href="login.html">Login</a>
+        <a class="nav-link-active" href="login.html">Login</a>
         <a href="registro.html">Registro</a>
       </div>
 
-      <a class="button button-secondary" href="login.html">Logout</a>
+      <a class="button button-secondary" href="index.html#destacados">Destacados</a>
     </nav>
   </header>
 
-  <main class="container narrow">
-    <section class="form-section">
-      <p class="eyebrow">Acceso de usuarios</p>
-      <h1>Iniciar sesión</h1>
-      <form class="form-card">
-        <label for="login-email">Email</label>
-        <input id="login-email" name="email" type="email" placeholder="nombre@correo.com" required>
+  <main class="container auth-container">
+    <section class="auth-layout">
+      <aside class="auth-aside">
+        <p class="eyebrow">Mi cuenta Nova</p>
+        <h1>Ingresá a una experiencia más rápida y personalizada.</h1>
+        <p>
+          Accedé a tus favoritos, retomá compras pendientes y seguí los productos
+          que más te interesan dentro del ecommerce.
+        </p>
+        <ul class="feature-list">
+          <li>Guardá productos destacados para volver después.</li>
+          <li>Continuá tu compra desde cualquier sección del sitio.</li>
+          <li>Recibí novedades según tus categorías preferidas.</li>
+        </ul>
+        <div class="auth-note">
+          <strong>Acceso seguro</strong>
+          <span>Una pantalla de login pensada como parte integral del diseño de la app.</span>
+        </div>
+        <a class="button button-secondary" href="registro.html">Crear cuenta nueva</a>
+      </aside>
 
-        <label for="login-password">Contraseña</label>
-        <input id="login-password" name="password" type="password" placeholder="Ingresá tu contraseña" required>
+      <section class="form-section auth-form-panel">
+        <p class="eyebrow">Acceso de usuarios</p>
+        <h1>Iniciar sesión</h1>
+        <p class="form-help">
+          Ingresá con tu email para continuar explorando el catálogo y simular el
+          flujo de compra.
+        </p>
+        <form class="form-card">
+          <div class="form-field">
+            <label for="login-email">Email</label>
+            <input id="login-email" name="email" type="email" placeholder="nombre@correo.com" required>
+          </div>
 
-        <button class="button" type="submit">Ingresar</button>
-      </form>
+          <div class="form-field">
+            <label for="login-password">Contraseña</label>
+            <input id="login-password" name="password" type="password" placeholder="Ingresá tu contraseña" required>
+          </div>
+
+          <div class="form-extra">
+            <span class="form-inline-note">Acceso con email y contraseña.</span>
+            <a class="text-link" href="registro.html">¿Todavía no tenés cuenta?</a>
+          </div>
+
+          <button class="button" type="submit">Ingresar</button>
+          <p class="form-help">Después del login, el usuario podría continuar su recorrido por el shop.</p>
+        </form>
+      </section>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-brand">
+        <strong>Tienda Nova</strong>
+        <p>
+          Pantalla de acceso integrada al mismo sistema visual del ecommerce para
+          mantener consistencia y marca.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="categorias/electronica.html">Electrónica</a>
+        <a href="categorias/indumentaria.html">Indumentaria</a>
+        <a href="categorias/hogar.html">Hogar</a>
+        <a href="registro.html">Registro</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

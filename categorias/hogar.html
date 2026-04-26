@@ -6,7 +6,7 @@
   <title>Tienda Nova | Hogar</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="page-hogar">
   <header class="site-header">
     <nav class="navbar">
       <a class="brand" href="../index.html" aria-label="Ir al inicio de Tienda Nova">
@@ -18,39 +18,141 @@
         <a href="../index.html">Home</a>
         <a href="electronica.html">Electrónica</a>
         <a href="indumentaria.html">Indumentaria</a>
-        <a href="hogar.html">Hogar</a>
+        <a class="nav-link-active" href="hogar.html">Hogar</a>
         <a href="../login.html">Login</a>
         <a href="../registro.html">Registro</a>
       </div>
 
-      <a class="button button-secondary" href="../login.html">Logout</a>
+      <a class="button button-secondary" href="../index.html#destacados">Destacados</a>
     </nav>
   </header>
 
   <main class="container">
     <section class="category-hero">
-      <p class="eyebrow">Categoría</p>
-      <h1>Hogar</h1>
-      <p>
-        Encontrá artículos para organizar, decorar y equipar tus espacios con
-        practicidad y estilo.
-      </p>
+      <div class="section-head section-head-compact">
+        <div>
+          <p class="eyebrow">Categoría</p>
+          <h1>Hogar</h1>
+          <p>
+            Encontrá artículos para organizar, decorar y equipar tus espacios con
+            una propuesta limpia, funcional y lista para escalar a catálogo real.
+          </p>
+        </div>
+
+        <div class="catalog-summary">
+          <span class="summary-label">Selección Nova</span>
+          <strong>3 productos prototipo</strong>
+          <p>Cards con identidad propia para una sección visualmente consistente.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="card-grid">
-      <article class="card">
-        <h2>Cocina</h2>
-        <p>Utensilios y accesorios funcionales para uso diario.</p>
-      </article>
-      <article class="card">
-        <h2>Decoración</h2>
-        <p>Objetos simples para darle personalidad a cada ambiente.</p>
-      </article>
-      <article class="card">
-        <h2>Organización</h2>
-        <p>Cajas, estantes y soluciones prácticas para mantener todo en orden.</p>
-      </article>
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Catálogo</p>
+          <h2>Productos destacados</h2>
+        </div>
+        <p class="section-copy">
+          Esta pantalla ya tiene el layout general y un prototipo claro para la grilla de productos.
+        </p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-media tone-teal">
+            <span class="product-media-label">Kitchen</span>
+            <strong>Lumen Glass</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Cocina</span>
+            <h3 class="product-title">Juego Lumen Glass</h3>
+            <p class="product-description">
+              Set de vasos con terminación mate y presencia visual ideal para una mesa limpia.
+            </p>
+            <div class="product-meta">
+              <span>6 piezas</span>
+              <span>Vidrio templado</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$24.500</strong>
+                <span>$29.900</span>
+              </div>
+              <a class="button button-small" href="../login.html">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media tone-navy">
+            <span class="product-media-label">Decor</span>
+            <strong>Halo Lamp</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Decoración</span>
+            <h3 class="product-title">Lámpara Halo Table</h3>
+            <p class="product-description">
+              Luz cálida y silueta minimalista para escritorios, living o dormitorios.
+            </p>
+            <div class="product-meta">
+              <span>LED cálido</span>
+              <span>Base metálica</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$49.990</strong>
+                <span>$57.500</span>
+              </div>
+              <a class="button button-small" href="../login.html">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media tone-sky">
+            <span class="product-media-label">Order</span>
+            <strong>Modular Box</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Organización</span>
+            <h3 class="product-title">Organizador Modular Stack</h3>
+            <p class="product-description">
+              Sistema práctico para mantener todo visible y ordenado sin perder estética.
+            </p>
+            <div class="product-meta">
+              <span>Apilable</span>
+              <span>3 módulos</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$31.800</strong>
+                <span>$36.900</span>
+              </div>
+              <a class="button button-small" href="../login.html">Comprar</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-brand">
+        <strong>Tienda Nova</strong>
+        <p>
+          Categoría de hogar con cards visuales y estructura de catálogo preparada para escalar.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="electronica.html">Electrónica</a>
+        <a href="indumentaria.html">Indumentaria</a>
+        <a href="hogar.html">Hogar</a>
+        <a href="../registro.html">Registro</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -6,7 +6,7 @@
   <title>Tienda Nova</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-home">
   <header class="site-header">
     <nav class="navbar">
       <a class="brand" href="index.html" aria-label="Ir al inicio de Tienda Nova">
@@ -15,7 +15,7 @@
       </a>
 
       <div class="nav-links">
-        <a href="index.html">Home</a>
+        <a class="nav-link-active" href="index.html">Home</a>
         <a href="categorias/electronica.html">Electrónica</a>
         <a href="categorias/indumentaria.html">Indumentaria</a>
         <a href="categorias/hogar.html">Hogar</a>
@@ -23,49 +23,245 @@
         <a href="registro.html">Registro</a>
       </div>
 
-      <a class="button button-secondary" href="login.html">Logout</a>
+      <a class="button button-secondary" href="#destacados">Destacados</a>
     </nav>
   </header>
 
   <main class="container">
     <section class="hero">
-      <p class="eyebrow">Tu tienda online</p>
-      <h1>Tienda Nova</h1>
-      <p class="hero-text">
-        Bienvenidos a Tienda Nova, un ecommerce pensado para encontrar productos
-        de tecnología, moda y hogar en un solo lugar.
-      </p>
-      <div class="hero-actions">
-        <a class="button" href="registro.html">Crear cuenta</a>
-        <a class="button button-secondary" href="login.html">Iniciar sesión</a>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Tu tienda online</p>
+          <h1>Diseño, tecnología y hogar en una sola vidriera.</h1>
+          <p class="hero-text">
+            Tienda Nova es un ecommerce conceptual con una identidad moderna,
+            paleta propia y una estructura lista para crecer con catálogo,
+            cuentas de usuario y experiencia de compra.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="registro.html">Crear cuenta</a>
+            <a class="button button-secondary" href="login.html">Iniciar sesión</a>
+          </div>
+          <div class="hero-stats">
+            <article class="hero-stat">
+              <strong>24/48h</strong>
+              <span>Entrega estimada en productos destacados seleccionados.</span>
+            </article>
+            <article class="hero-stat">
+              <strong>3 rubros</strong>
+              <span>Tecnología, moda y hogar dentro del mismo catálogo.</span>
+            </article>
+            <article class="hero-stat">
+              <strong>UI propia</strong>
+              <span>Una interfaz fría y limpia pensada para retener usuarios.</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <span class="panel-badge">Drop destacado</span>
+          <h2>Nova Wave Studio</h2>
+          <p>
+            Auriculares inalámbricos con perfil minimalista, batería extendida y
+            una estética alineada con la identidad visual del shop.
+          </p>
+          <div class="panel-price">
+            <strong>$129.999</strong>
+            <span>$159.999</span>
+          </div>
+          <div class="panel-meta">
+            <span>Bluetooth 5.3</span>
+            <span>30 h de batería</span>
+          </div>
+          <a class="button button-secondary" href="categorias/electronica.html">Ver colección</a>
+        </aside>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Categorías destacadas</h2>
+    <section class="section" id="categorias">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Explorá</p>
+          <h2>Categorías destacadas</h2>
+        </div>
+        <p class="section-copy">
+          La portada ya tiene una sección de navegación visual hacia los tres
+          rubros principales del ecommerce.
+        </p>
+      </div>
       <div class="card-grid">
-        <article class="card">
-          <span class="card-tag">Categoría 1</span>
+        <article class="card category-card">
+          <span class="card-tag">Tech picks</span>
           <h3>Electrónica</h3>
-          <p>Celulares, auriculares, notebooks y accesorios para uso diario.</p>
-          <a class="card-link" href="categorias/electronica.html">Ver categoría</a>
+          <p>Audio, estudio, notebooks y accesorios pensados para productividad y entretenimiento.</p>
+          <div class="card-meta">
+            <span>Audio</span>
+            <span>Notebooks</span>
+            <span>Accesorios</span>
+          </div>
+          <a class="card-link" href="categorias/electronica.html">Explorar categoría</a>
         </article>
 
-        <article class="card">
-          <span class="card-tag">Categoría 2</span>
+        <article class="card category-card">
+          <span class="card-tag">Streetwear</span>
           <h3>Indumentaria</h3>
-          <p>Ropa urbana, deportiva y básica para todos los estilos.</p>
-          <a class="card-link" href="categorias/indumentaria.html">Ver categoría</a>
+          <p>Prendas urbanas y esenciales con foco en básicos versátiles, cómodos y actuales.</p>
+          <div class="card-meta">
+            <span>Remeras</span>
+            <span>Buzos</span>
+            <span>Accesorios</span>
+          </div>
+          <a class="card-link" href="categorias/indumentaria.html">Explorar categoría</a>
         </article>
 
-        <article class="card">
-          <span class="card-tag">Categoría 3</span>
+        <article class="card category-card">
+          <span class="card-tag">Living edit</span>
           <h3>Hogar</h3>
-          <p>Decoración, cocina y organización para renovar tus espacios.</p>
-          <a class="card-link" href="categorias/hogar.html">Ver categoría</a>
+          <p>Objetos funcionales y decorativos para cocina, organización y puesta en escena del espacio.</p>
+          <div class="card-meta">
+            <span>Cocina</span>
+            <span>Decoración</span>
+            <span>Orden</span>
+          </div>
+          <a class="card-link" href="categorias/hogar.html">Explorar categoría</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="destacados">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Selección curada</p>
+          <h2>Productos destacados</h2>
+        </div>
+        <p class="section-copy">
+          Esta grilla funciona como prototipo de card de producto: imagen
+          conceptual, precio, metadata y llamada a la acción.
+        </p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-media tone-sky">
+            <span class="product-media-label">Audio</span>
+            <strong>Nova Wave</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Electrónica</span>
+            <h3 class="product-title">Auriculares Nova Wave Studio</h3>
+            <p class="product-description">
+              Sonido claro, almohadillas blandas y autonomía para jornadas largas.
+            </p>
+            <div class="product-meta">
+              <span>Bluetooth 5.3</span>
+              <span>6 cuotas</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$129.999</strong>
+                <span>$159.999</span>
+              </div>
+              <a class="button button-small" href="categorias/electronica.html">Ver detalle</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media tone-indigo">
+            <span class="product-media-label">Outerwear</span>
+            <strong>North Line</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Indumentaria</span>
+            <h3 class="product-title">Buzo North Line Premium</h3>
+            <p class="product-description">
+              Corte recto, interior suave y una paleta sobria para uso diario.
+            </p>
+            <div class="product-meta">
+              <span>Unisex</span>
+              <span>Talles S al XL</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$64.900</strong>
+                <span>$74.900</span>
+              </div>
+              <a class="button button-small" href="categorias/indumentaria.html">Ver detalle</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media tone-teal">
+            <span class="product-media-label">Kitchen</span>
+            <strong>Aura Set</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Hogar</span>
+            <h3 class="product-title">Set Aura Kitchen</h3>
+            <p class="product-description">
+              Piezas funcionales para sumar orden y una estética limpia en la cocina.
+            </p>
+            <div class="product-meta">
+              <span>3 piezas</span>
+              <span>Edición Nova</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$38.500</strong>
+                <span>$44.000</span>
+              </div>
+              <a class="button button-small" href="categorias/hogar.html">Ver detalle</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media tone-navy">
+            <span class="product-media-label">Workspace</span>
+            <strong>Orbit Pro</strong>
+          </div>
+          <div class="product-body">
+            <span class="card-tag">Electrónica</span>
+            <h3 class="product-title">Mouse Orbit Pro</h3>
+            <p class="product-description">
+              Un periférico liviano y preciso para estudio, trabajo o gaming casual.
+            </p>
+            <div class="product-meta">
+              <span>Wireless</span>
+              <span>USB-C</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <strong>$42.990</strong>
+                <span>$49.990</span>
+              </div>
+              <a class="button button-small" href="categorias/electronica.html">Ver detalle</a>
+            </div>
+          </div>
         </article>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-brand">
+        <strong>Tienda Nova</strong>
+        <p>
+          Ecommerce conceptual con identidad visual propia, catálogo estático y
+          estructura lista para seguir creciendo en próximas etapas.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="categorias/electronica.html">Electrónica</a>
+        <a href="categorias/indumentaria.html">Indumentaria</a>
+        <a href="categorias/hogar.html">Hogar</a>
+        <a href="login.html">Login</a>
+        <a href="registro.html">Registro</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
