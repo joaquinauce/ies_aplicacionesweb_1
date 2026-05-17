@@ -5,27 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda Nova | Electrónica</title>
   <link rel="stylesheet" href="../styles.css">
+  <script src="../app.js" defer></script>
 </head>
-<body class="page-electronica">
-  <header class="site-header">
-    <nav class="navbar">
-      <a class="brand" href="../index.html" aria-label="Ir al inicio de Tienda Nova">
-        <span class="brand-icon">TN</span>
-        <span>Tienda Nova</span>
-      </a>
-
-      <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a class="nav-link-active" href="electronica.html">Electrónica</a>
-        <a href="indumentaria.html">Indumentaria</a>
-        <a href="hogar.html">Hogar</a>
-        <a href="../login.html">Login</a>
-        <a href="../registro.html">Registro</a>
-      </div>
-
-      <a class="button button-secondary" href="../index.html#destacados">Destacados</a>
-    </nav>
-  </header>
+<body class="page-electronica" data-page="electronica" data-base-path=".." data-access="private">
+  <header class="site-header" id="site-header"></header>
 
   <main class="container">
     <section class="category-hero">
@@ -58,82 +41,7 @@
         </p>
       </div>
 
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-media tone-sky">
-            <span class="product-media-label">Audio</span>
-            <strong>Nova Wave</strong>
-          </div>
-          <div class="product-body">
-            <span class="card-tag">Auriculares</span>
-            <h3 class="product-title">Nova Wave Studio</h3>
-            <p class="product-description">
-              Perfil urbano, sonido limpio y batería extendida para home office o estudio.
-            </p>
-            <div class="product-meta">
-              <span>30 h batería</span>
-              <span>Bluetooth</span>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <strong>$129.999</strong>
-                <span>$159.999</span>
-              </div>
-              <a class="button button-small" href="../login.html">Comprar</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-media tone-navy">
-            <span class="product-media-label">Notebook</span>
-            <strong>Orbit 14</strong>
-          </div>
-          <div class="product-body">
-            <span class="card-tag">Computación</span>
-            <h3 class="product-title">Notebook Orbit 14</h3>
-            <p class="product-description">
-              Equipo compacto para cursar, trabajar y resolver tareas diarias con solvencia.
-            </p>
-            <div class="product-meta">
-              <span>16 GB RAM</span>
-              <span>SSD 512 GB</span>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <strong>$899.900</strong>
-                <span>$949.900</span>
-              </div>
-              <a class="button button-small" href="../login.html">Comprar</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-media tone-teal">
-            <span class="product-media-label">Desk</span>
-            <strong>Focus Kit</strong>
-          </div>
-          <div class="product-body">
-            <span class="card-tag">Accesorios</span>
-            <h3 class="product-title">Kit Focus Desk</h3>
-            <p class="product-description">
-              Mouse, pad y soporte para ordenar un escritorio con una presencia visual uniforme.
-            </p>
-            <div class="product-meta">
-              <span>3 piezas</span>
-              <span>USB-C</span>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <strong>$72.500</strong>
-                <span>$82.500</span>
-              </div>
-              <a class="button button-small" href="../login.html">Comprar</a>
-            </div>
-          </div>
-        </article>
-      </div>
+      <div class="product-grid" data-product-grid></div>
     </section>
   </main>
 
