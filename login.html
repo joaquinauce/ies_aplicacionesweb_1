@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda Nova | Login</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
-<body class="page-login">
+<body class="page-login" data-page="login" data-base-path=".">
   <header class="site-header">
     <nav class="navbar">
       <a class="brand" href="index.html" aria-label="Ir al inicio de Tienda Nova">
@@ -55,7 +56,7 @@
           Ingresá con tu email para continuar explorando el catálogo y simular el
           flujo de compra.
         </p>
-        <form class="form-card">
+        <form class="form-card" id="login-form">
           <div class="form-field">
             <label for="login-email">Email</label>
             <input id="login-email" name="email" type="email" placeholder="nombre@correo.com" required>
@@ -72,7 +73,7 @@
           </div>
 
           <button class="button" type="submit">Ingresar</button>
-          <p class="form-help">Después del login, el usuario podría continuar su recorrido por el shop.</p>
+          <p class="form-help">Al ingresar, el usuario será redirigido a la página principal de la tienda.</p>
         </form>
       </section>
     </section>

@@ -5,27 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda Nova</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
-<body class="page-home">
-  <header class="site-header">
-    <nav class="navbar">
-      <a class="brand" href="index.html" aria-label="Ir al inicio de Tienda Nova">
-        <span class="brand-icon">TN</span>
-        <span>Tienda Nova</span>
-      </a>
-
-      <div class="nav-links">
-        <a class="nav-link-active" href="index.html">Home</a>
-        <a href="categorias/electronica.html">Electrónica</a>
-        <a href="categorias/indumentaria.html">Indumentaria</a>
-        <a href="categorias/hogar.html">Hogar</a>
-        <a href="login.html">Login</a>
-        <a href="registro.html">Registro</a>
-      </div>
-
-      <a class="button button-secondary" href="#destacados">Destacados</a>
-    </nav>
-  </header>
+<body class="page-home" data-page="home" data-base-path="." data-access="private">
+  <header class="site-header" id="site-header"></header>
 
   <main class="container">
     <section class="hero">
@@ -140,107 +123,7 @@
         </p>
       </div>
 
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-media tone-sky">
-            <span class="product-media-label">Audio</span>
-            <strong>Nova Wave</strong>
-          </div>
-          <div class="product-body">
-            <span class="card-tag">Electrónica</span>
-            <h3 class="product-title">Auriculares Nova Wave Studio</h3>
-            <p class="product-description">
-              Sonido claro, almohadillas blandas y autonomía para jornadas largas.
-            </p>
-            <div class="product-meta">
-              <span>Bluetooth 5.3</span>
-              <span>6 cuotas</span>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <strong>$129.999</strong>
-                <span>$159.999</span>
-              </div>
-              <a class="button button-small" href="categorias/electronica.html">Ver detalle</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-media tone-indigo">
-            <span class="product-media-label">Outerwear</span>
-            <strong>North Line</strong>
-          </div>
-          <div class="product-body">
-            <span class="card-tag">Indumentaria</span>
-            <h3 class="product-title">Buzo North Line Premium</h3>
-            <p class="product-description">
-              Corte recto, interior suave y una paleta sobria para uso diario.
-            </p>
-            <div class="product-meta">
-              <span>Unisex</span>
-              <span>Talles S al XL</span>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <strong>$64.900</strong>
-                <span>$74.900</span>
-              </div>
-              <a class="button button-small" href="categorias/indumentaria.html">Ver detalle</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-media tone-teal">
-            <span class="product-media-label">Kitchen</span>
-            <strong>Aura Set</strong>
-          </div>
-          <div class="product-body">
-            <span class="card-tag">Hogar</span>
-            <h3 class="product-title">Set Aura Kitchen</h3>
-            <p class="product-description">
-              Piezas funcionales para sumar orden y una estética limpia en la cocina.
-            </p>
-            <div class="product-meta">
-              <span>3 piezas</span>
-              <span>Edición Nova</span>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <strong>$38.500</strong>
-                <span>$44.000</span>
-              </div>
-              <a class="button button-small" href="categorias/hogar.html">Ver detalle</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-media tone-navy">
-            <span class="product-media-label">Workspace</span>
-            <strong>Orbit Pro</strong>
-          </div>
-          <div class="product-body">
-            <span class="card-tag">Electrónica</span>
-            <h3 class="product-title">Mouse Orbit Pro</h3>
-            <p class="product-description">
-              Un periférico liviano y preciso para estudio, trabajo o gaming casual.
-            </p>
-            <div class="product-meta">
-              <span>Wireless</span>
-              <span>USB-C</span>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <strong>$42.990</strong>
-                <span>$49.990</span>
-              </div>
-              <a class="button button-small" href="categorias/electronica.html">Ver detalle</a>
-            </div>
-          </div>
-        </article>
-      </div>
+      <div class="product-grid" data-product-grid></div>
     </section>
   </main>
 

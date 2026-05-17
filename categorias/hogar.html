@@ -5,27 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda Nova | Hogar</title>
   <link rel="stylesheet" href="../styles.css">
+  <script src="../app.js" defer></script>
 </head>
-<body class="page-hogar">
-  <header class="site-header">
-    <nav class="navbar">
-      <a class="brand" href="../index.html" aria-label="Ir al inicio de Tienda Nova">
-        <span class="brand-icon">TN</span>
-        <span>Tienda Nova</span>
-      </a>
-
-      <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="electronica.html">Electrónica</a>
-        <a href="indumentaria.html">Indumentaria</a>
-        <a class="nav-link-active" href="hogar.html">Hogar</a>
-        <a href="../login.html">Login</a>
-        <a href="../registro.html">Registro</a>
-      </div>
-
-      <a class="button button-secondary" href="../index.html#destacados">Destacados</a>
-    </nav>
-  </header>
+<body class="page-hogar" data-page="hogar" data-base-path=".." data-access="private">
+  <header class="site-header" id="site-header"></header>
 
   <main class="container">
     <section class="category-hero">
@@ -58,82 +41,7 @@
         </p>
       </div>
 
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-media tone-teal">
-            <span class="product-media-label">Kitchen</span>
-            <strong>Lumen Glass</strong>
-          </div>
-          <div class="product-body">
-            <span class="card-tag">Cocina</span>
-            <h3 class="product-title">Juego Lumen Glass</h3>
-            <p class="product-description">
-              Set de vasos con terminación mate y presencia visual ideal para una mesa limpia.
-            </p>
-            <div class="product-meta">
-              <span>6 piezas</span>
-              <span>Vidrio templado</span>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <strong>$24.500</strong>
-                <span>$29.900</span>
-              </div>
-              <a class="button button-small" href="../login.html">Comprar</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-media tone-navy">
-            <span class="product-media-label">Decor</span>
-            <strong>Halo Lamp</strong>
-          </div>
-          <div class="product-body">
-            <span class="card-tag">Decoración</span>
-            <h3 class="product-title">Lámpara Halo Table</h3>
-            <p class="product-description">
-              Luz cálida y silueta minimalista para escritorios, living o dormitorios.
-            </p>
-            <div class="product-meta">
-              <span>LED cálido</span>
-              <span>Base metálica</span>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <strong>$49.990</strong>
-                <span>$57.500</span>
-              </div>
-              <a class="button button-small" href="../login.html">Comprar</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-media tone-sky">
-            <span class="product-media-label">Order</span>
-            <strong>Modular Box</strong>
-          </div>
-          <div class="product-body">
-            <span class="card-tag">Organización</span>
-            <h3 class="product-title">Organizador Modular Stack</h3>
-            <p class="product-description">
-              Sistema práctico para mantener todo visible y ordenado sin perder estética.
-            </p>
-            <div class="product-meta">
-              <span>Apilable</span>
-              <span>3 módulos</span>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <strong>$31.800</strong>
-                <span>$36.900</span>
-              </div>
-              <a class="button button-small" href="../login.html">Comprar</a>
-            </div>
-          </div>
-        </article>
-      </div>
+      <div class="product-grid" data-product-grid></div>
     </section>
   </main>
 
