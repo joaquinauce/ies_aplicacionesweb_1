@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda Nova | Indumentaria</title>
-  <link rel="stylesheet" href="../styles.css">
-  <script src="../app.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/categorias.css">
 </head>
 <body class="page-indumentaria" data-page="indumentaria" data-base-path=".." data-access="private">
   <header class="site-header" id="site-header"></header>
@@ -24,8 +24,8 @@
 
         <div class="catalog-summary">
           <span class="summary-label">Selección Nova</span>
-          <strong>3 productos prototipo</strong>
-          <p>Mockup de catálogo con cards de producto y espacio para futuras imágenes reales.</p>
+          <strong>3 productos definitivos</strong>
+          <p>Cards cargadas desde JSON con precio, cantidad y accion de carrito.</p>
         </div>
       </div>
     </section>
@@ -37,7 +37,7 @@
           <h2>Productos destacados</h2>
         </div>
         <p class="section-copy">
-          Las cards ya muestran estructura de precio, categoría, etiqueta visual y acción de compra.
+          Esta pagina consume la fuente JSON y muestra solo productos de indumentaria.
         </p>
       </div>
 
@@ -55,12 +55,14 @@
       </div>
       <div class="footer-links">
         <a href="../index.html">Home</a>
-        <a href="electronica.html">Electrónica</a>
-        <a href="indumentaria.html">Indumentaria</a>
-        <a href="hogar.html">Hogar</a>
-        <a href="../registro.html">Registro</a>
+        <a href="./electronica.html">Electrónica</a>
+        <a href="./indumentaria.html">Indumentaria</a>
+        <a href="./hogar.html">Hogar</a>
+        <a href="./carrito.html">Carrito</a>
+        <a href="./registro.html">Registro</a>
       </div>
     </div>
   </footer>
+  <script src="../js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Nova | Carrito</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="page-carrito" data-page="carrito" data-base-path=".." data-access="private">
+  <header class="site-header" id="site-header"></header>
+
+  <main class="container">
+    <section class="category-hero cart-hero">
+      <div class="section-head section-head-compact">
+        <div>
+          <p class="eyebrow">Compra</p>
+          <h1>Carrito</h1>
+          <p>
+            Revisa los productos agregados, ajusta cantidades y elimina lo que no quieras comprar.
+          </p>
+        </div>
+        <div data-cart-summary></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Detalle</p>
+          <h2>Productos seleccionados</h2>
+        </div>
+        <p class="section-copy">
+          Los datos se leen desde la estructura guardada en localStorage.
+        </p>
+      </div>
+
+      <div class="cart-list" data-cart-items></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-brand">
+        <strong>Tienda Nova</strong>
+        <p>
+          Carrito de compras conectado con localStorage para persistir los productos elegidos.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="./electronica.html">Electrónica</a>
+        <a href="./indumentaria.html">Indumentaria</a>
+        <a href="./hogar.html">Hogar</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda Nova</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="page-home" data-page="home" data-base-path="." data-access="private">
   <header class="site-header" id="site-header"></header>
@@ -22,8 +21,8 @@
             cuentas de usuario y experiencia de compra.
           </p>
           <div class="hero-actions">
-            <a class="button" href="registro.html">Crear cuenta</a>
-            <a class="button button-secondary" href="login.html">Iniciar sesión</a>
+            <a class="button" href="#destacados">Ver productos</a>
+            <a class="button button-secondary" href="./pages/carrito.html">Ir al carrito</a>
           </div>
           <div class="hero-stats">
             <article class="hero-stat">
@@ -56,7 +55,7 @@
             <span>Bluetooth 5.3</span>
             <span>30 h de batería</span>
           </div>
-          <a class="button button-secondary" href="categorias/electronica.html">Ver colección</a>
+          <a class="button button-secondary" href="./pages/electronica.html">Ver categoria</a>
         </aside>
       </div>
     </section>
@@ -82,7 +81,7 @@
             <span>Notebooks</span>
             <span>Accesorios</span>
           </div>
-          <a class="card-link" href="categorias/electronica.html">Explorar categoría</a>
+          <a class="card-link" href="./pages/electronica.html">Explorar categoría</a>
         </article>
 
         <article class="card category-card">
@@ -94,7 +93,7 @@
             <span>Buzos</span>
             <span>Accesorios</span>
           </div>
-          <a class="card-link" href="categorias/indumentaria.html">Explorar categoría</a>
+          <a class="card-link" href="./pages/indumentaria.html">Explorar categoría</a>
         </article>
 
         <article class="card category-card">
@@ -106,7 +105,7 @@
             <span>Decoración</span>
             <span>Orden</span>
           </div>
-          <a class="card-link" href="categorias/hogar.html">Explorar categoría</a>
+          <a class="card-link" href="./pages/hogar.html">Explorar categoría</a>
         </article>
       </div>
     </section>
@@ -118,8 +117,8 @@
           <h2>Productos destacados</h2>
         </div>
         <p class="section-copy">
-          Esta grilla funciona como prototipo de card de producto: imagen
-          conceptual, precio, metadata y llamada a la acción.
+          La portada muestra productos definitivos de cada categoria cargados
+          desde la fuente JSON del ecommerce.
         </p>
       </div>
 
@@ -137,14 +136,16 @@
         </p>
       </div>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="categorias/electronica.html">Electrónica</a>
-        <a href="categorias/indumentaria.html">Indumentaria</a>
-        <a href="categorias/hogar.html">Hogar</a>
-        <a href="login.html">Login</a>
-        <a href="registro.html">Registro</a>
+        <a href="./index.html">Home</a>
+        <a href="./pages/electronica.html">Electrónica</a>
+        <a href="./pages/indumentaria.html">Indumentaria</a>
+        <a href="./pages/hogar.html">Hogar</a>
+        <a href="./pages/carrito.html">Carrito</a>
+        <a href="./pages/login.html">Login</a>
+        <a href="./pages/registro.html">Registro</a>
       </div>
     </div>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,60 @@
+body.page-electronica {
+  --accent: #14a6ff;
+  --accent-dark: #08355f;
+  --surface-tint: rgba(20, 166, 255, 0.12);
+}
+
+body.page-indumentaria {
+  --accent: #487eff;
+  --accent-dark: #182f6b;
+  --surface-tint: rgba(72, 126, 255, 0.12);
+}
+
+body.page-hogar {
+  --accent: #37b8d4;
+  --accent-dark: #0f4a65;
+  --surface-tint: rgba(55, 184, 212, 0.13);
+}
+
+.category-hero {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.catalog-summary {
+  min-width: 250px;
+  max-width: 320px;
+  padding: 1rem 1.15rem;
+  background: var(--surface-tint);
+  border: 1px solid rgba(18, 62, 114, 0.12);
+  border-radius: var(--radius-md);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.36);
+}
+
+.summary-label {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.catalog-summary strong {
+  display: block;
+  color: var(--accent-dark);
+  font-size: 1.15rem;
+}
+
+.catalog-summary p {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 780px) {
+  .category-hero {
+    padding: 1.6rem;
+  }
+}
